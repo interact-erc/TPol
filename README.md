@@ -16,14 +16,14 @@ $ cd data/
 $ git clone https://github.com/interact-erc/GEO-Aligned.git
 $ cd ..
 ```
-2.Run the Lexical Translator script. You have the option to choose between the bert and the mbart approach. For instance, to run the bert approach, execute the zbert_translator.pyz script.
+2.Run the Lexical Translator script. You have the option to choose between the bert and the mbart approach. For instance, to run the bert approach, execute the bert_translator.pyz script.
 3. Run the MR Reorderer script. Similarly, you can choose between the bert and the mbart approach. For instance, to run the mbart approach, execute the `mbart_reorderer.py` script.
 
 Both the translator and reorderer scripts require the following arguments:
 ```
 - --dataset: path to the dataset file
 - --test-ids: path to the test ids file
-- --dev-ids: path to the dev ids file
+- --val-ids: path to the dev ids file
 - --language: dataset language, choose among en, it, de
 - --out-file: path to the file where the test predictions are be saved
 - --results-file: path to the file where the numerical results are saved
